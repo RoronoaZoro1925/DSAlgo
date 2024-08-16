@@ -1,21 +1,19 @@
 package RecursionPractice;
 
-public class PrintNtoOne
+public class PrintOnetoN
 {
     public static void main(String[] args)
     {
-        fun(5 );
+        function(7);
     }
 
-    static void fun(int n)
+    static void function(int n)
     {
         if (n == 0)
         {
             return;
         }
-        System.out.println(n + " ");
-        fun(n-1);
-//        System.out.println(n);
+        function(n-1);
+        System.out.println(n);
     }
-
 }
