@@ -1,3 +1,5 @@
+package BasicMathematics;
+
 public class AllDivisor
 {
     public static void main(String[] args) {

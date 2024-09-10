@@ -1,3 +1,5 @@
+package BasicMathematics;
+
 public class ComputingPower
 {
     public static void main(String[] args)

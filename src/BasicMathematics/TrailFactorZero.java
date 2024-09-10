@@ -1,3 +1,4 @@
+package BasicMathematics;
 public class TrailFactorZero
 {
     public static void main(String[] args)
