@@ -7,8 +7,8 @@ public class MoveZeroToEnd
     public static void main(String[] args)
     {
         int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
-//        moveZeroEnd(arr);
-        pushZeroToEnd(arr);
+        moveZeroEnd(arr);
+//        pushZeroToEnd(arr);
         for (int i = 0; i < arr.length; i++)
         {
             System.out.print(arr[i] + " ");
