@@ -1,5 +1,7 @@
 package ArraysPractice;
 
+import java.util.Arrays;
+
 public class RemoveDuplicate
 {
     public static void main(String[] args)
@@ -46,6 +48,7 @@ public class RemoveDuplicate
 
     static int removeDuplicate(int arr[], int n)
     {
+
         int result = 1;
         for (int i = 0; i < n; i++)
         {
