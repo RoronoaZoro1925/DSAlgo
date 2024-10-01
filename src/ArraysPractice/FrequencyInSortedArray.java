@@ -1,11 +1,23 @@
 package ArraysPractice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class FrequencyInSortedArray
 {
     public static void main(String[] args)
     {
         int arr[] = {10,20,20,20,30,30,40,40,50};
         frequencyOccur(arr);
+
+//        int ar[] = {2,3,5,2,1,9,7};
+//        Arrays.sort(ar);
+//        for (int i : ar)
+//        {
+//            System.out.println(i);
+//        }
+//        ArrayList<Integer> ar = new ArrayList<>(Collections.singleton(arr));
 
     }
     static void frequencyOccur(int arr[])
