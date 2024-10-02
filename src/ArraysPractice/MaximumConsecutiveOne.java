@@ -4,8 +4,9 @@ public class MaximumConsecutiveOne
 {
     public static void main(String[] args)
     {
-        int arr[] = {0,1,1,1,1,2,0,1,1};
-        System.out.println(maxOne(arr));;
+        int arr[] = {0,1,1,1,1,0,0,1,1};
+//        System.out.println(maxOne(arr));
+        System.out.println(maxOneByOne(arr));
 
     }
 
@@ -25,7 +26,27 @@ public class MaximumConsecutiveOne
                     break;
 
             }
-            result=Math.max(current,result);
+            result=Math.max(result,current);
+        }
+        return result;
+    }
+
+    static int maxOneByOne(int arr[])
+    {
+        int result = 0;
+        int count = 0;
+        for (int i = 0; i < arr.length ; i++)
+        {
+
+            if (arr[i]==0)
+            {
+                count = 0;
+            }
+            else
+            {
+                count++;
+                result = Math.max(result,count);
+            }
         }
         return result;
     }

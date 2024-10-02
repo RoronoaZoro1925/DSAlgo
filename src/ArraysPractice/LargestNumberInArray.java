@@ -4,7 +4,7 @@ public class LargestNumberInArray
 {
     public static void main(String[] args)
     {
-        int arr[] = {12,20,10};
+        int arr[] = {10,10,10};
 //        System.out.println(getLargest(arr));
         System.out.println(getLarge(arr));
 

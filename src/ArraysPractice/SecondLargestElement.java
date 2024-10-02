@@ -8,9 +8,10 @@ public class SecondLargestElement
     public static void main(String[] args)
     {
         int arr[] = {12,14,18,20,22};
-        Arrays.sort(arr);
+//        Arrays.sort(arr);
 //        System.out.println(secondLargest(arr));
         System.out.println(secondLarge(arr));
+//        System.out.println(getLargest(arr));
 
     }
     static int getLargest(int arr[])
