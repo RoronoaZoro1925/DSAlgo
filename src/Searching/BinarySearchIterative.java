@@ -3,7 +3,7 @@ package Searching;
 public class BinarySearchIterative
 {
     public static void main(String[] args) {
-       int arr[] = {2,3,4,6,70,80};
+       int arr[] = {2,3,4,6,70,80,80};
        int x = 80;
         System.out.println(indexSearch(arr,x));
         System.out.println(binarySearch(arr,x));
