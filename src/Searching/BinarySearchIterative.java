@@ -1,13 +1,16 @@
 package Searching;
 
+import java.util.Arrays;
+
 public class BinarySearchIterative
 {
     public static void main(String[] args) {
        int arr[] = {2,3,4,6,70,80,80};
-       int x = 80;
-        System.out.println(indexSearch(arr,x));
+       int sr[] = {4,10,2,6,40,5};
+       int x = 3;
+//        System.out.println(indexSearch(arr,x));
         System.out.println(binarySearch(arr,x));
-        System.out.println(recursiveBinarySearch(arr,0,arr.length,x));
+//        System.out.println(recursiveBinarySearch(arr,0,arr.length,x));
 
     }
     static int indexSearch(int arr[], int x)
@@ -23,8 +26,29 @@ public class BinarySearchIterative
         return -1;
     }
 
+    static int [] sortArray(int arr[])
+    {
+        int temp = 0;
+        for (int i = 0; i < arr.length; i++)
+        {
+            for (int j = i+1; j <arr.length ; j++)
+            {
+                if (arr[i]>arr[j])
+                {
+                    temp = arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+
+            }
+
+        }
+        return arr;
+    }
+
     static int binarySearch(int arr[], int x)
     {
+        sortArray(arr);
         int low = 0, high = arr.length-1;
         while (low<=high)
         {
