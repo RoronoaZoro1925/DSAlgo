@@ -6,7 +6,7 @@ public class SortedRotatedArray
     {
         int arr[] = {10,20,40,60,5,8};
         int x = 5;
-        System.out.println(sortrotatedSearch(arr,x));
+        System.out.println(sortrotatedSearch(arr,x ));
 
     }
 
