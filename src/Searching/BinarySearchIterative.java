@@ -11,6 +11,8 @@ public class BinarySearchIterative
 //        System.out.println(indexSearch(arr,x));
         System.out.println(binarySearch(arr,x));
 //        System.out.println(recursiveBinarySearch(arr,0,arr.length,x));
+//        System.out.println(Integer.MAX_VALUE);
+//        System.out.println(Integer.MIN_VALUE);
 
     }
     static int indexSearch(int arr[], int x)
