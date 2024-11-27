@@ -8,7 +8,8 @@ public class SelectionSort
     {
         int arr[] = {10,5,8,20,2,18};
         int n = arr.length;
-        basicSelectSort(arr,n);
+//        basicSelectSort(arr,n);
+        selectSort(arr,n);
         Arrays.stream(arr).forEach(System.out::println);
 //        for(int i : arr)
 //            System.out.println(i);
@@ -37,5 +38,25 @@ public class SelectionSort
 
         }
 
+    }
+
+    public static void selectSort(int arr[], int n)
+    {
+        int temp = 0;
+        for (int i = 0; i < n-1; i++)
+        {
+            int min_number = i;
+
+            for (int j = i+1; j < n; j++)
+            {
+                if (arr[j]<arr[min_number])
+                {
+                    min_number = j;
+                }
+            }
+            temp = arr[min_number];
+            arr[min_number] = arr[i];
+            arr[i] = temp;
+        }
     }
 }
