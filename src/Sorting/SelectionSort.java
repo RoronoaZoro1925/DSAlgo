@@ -9,10 +9,13 @@ public class SelectionSort
         int arr[] = {10,5,8,20,2,18};
         int n = arr.length;
 //        basicSelectSort(arr,n);
-        selectSort(arr,n);
-        Arrays.stream(arr).forEach(System.out::println);
+//        selectSort(arr,n);
+//        Arrays.stream(arr).forEach(System.out::println);
 //        for(int i : arr)
 //            System.out.println(i);
+        double d = 55.5;
+        d = d%10;
+        System.out.println(d);
 
     }
 
