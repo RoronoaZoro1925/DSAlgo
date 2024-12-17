@@ -19,9 +19,17 @@ public class Practice
 //            System.out.println(y);
 //        }
 
-        int n = 18;
-        n *=2;
-        System.out.println(n);
+//        int n = 18;
+//        n *=2;
+//        System.out.println(n);
+
+        long a = 922337203;
+        long b = 922337203;
+        double sum  = (a+b)%(Math.pow(10,9)+7) ;
+//        System.out.println(Long.MAX_VALUE);
+        System.out.println(sum);
+
+
     }
 
 
