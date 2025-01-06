@@ -26,7 +26,6 @@ public class RemoveDuplicate
 
     static int removeDuplicateElements(int arr[], int n)
     {
-
         int temp[] = new int [n];
         temp[0]=arr[0];
         int result = 1;
@@ -48,7 +47,6 @@ public class RemoveDuplicate
 
     static int removeDuplicate(int arr[], int n)
     {
-
         int result = 1;
         for (int i = 0; i < n; i++)
         {
@@ -57,7 +55,6 @@ public class RemoveDuplicate
                 arr[i]=arr[result];
                 result++;
             }
-
         }
         return result;
     }
