@@ -3,7 +3,7 @@ package Sorting;
 public class QuickLSort
 {
     public static void main(String[] args) {
-        int arr[] = {8,4,7,9,3,10,5,6};
+        int arr[] = {4, 1, 3, 9, 7};
         quickSort(arr,0,arr.length-1);
         for (int x:arr)
             System.out.print(x + " ");
