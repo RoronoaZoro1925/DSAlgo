@@ -1,17 +1,44 @@
+import java.util.concurrent.*;
+
+
 public class CodeSecurePractice
 {
-    public static void main(String[] args) {
-        int num = 7;
-        if (num%2==0)
-        {
-            System.out.println("Even");
-        }
-        else
-        {
-            System.out.println("Odd");
-        }
+
+
+    public static void main(String[] args)
+    {
+        String s = null;
+        call(s);
+
     }
+
+    public static void call(Object ob)
+    {
+        System.out.println("Object method called");
+
+    }
+
+    public static void call(String s)
+    {
+        System.out.println("String method called");
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
