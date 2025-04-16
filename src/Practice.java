@@ -23,12 +23,10 @@ public class Practice
 //        n *=2;
 //        System.out.println(n);
 
-        char[] str = {'A','B','C'};
+        char[] str = {'A', 'B', 'C'};
         System.out.println(str);
-        
 
 
     }
 
-
-}
+    }

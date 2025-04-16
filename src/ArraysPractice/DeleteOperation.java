@@ -1,5 +1,7 @@
 package ArraysPractice;
 
+import java.util.Arrays;
+
 public class DeleteOperation
 {
 //    static int deleteEle(int arr[], int n, int x)
@@ -63,6 +65,15 @@ static int deleteEle(int arr[], int n, int x)
     }
     return n-1;
 }
+
+    public static int[] functionalDeleteOperation(int [] arr, int elementToRemove)
+    {
+        if (arr==null)
+            return new int[0];
+        return Arrays.stream(arr)
+                .filter(x->x!=elementToRemove)
+                .toArray();
+    }
     public static void main(String[] args)
     {
         int arr[]= {3, 8, 12, 5, 6}, x=12, n=5;
@@ -73,16 +84,18 @@ static int deleteEle(int arr[], int n, int x)
 
         }
         System.out.println();
+//
+//        n=deleteEle(arr,n,x);
+//
+//        System.out.println("After Deletion");
+//        for (int i = 0; i < n; i++)
+//        {
+//            System.out.print(arr[i] + " ");
+//
+//        }
 
-        n=deleteEle(arr,n,x);
-
-        System.out.println("After Deletion");
-        for (int i = 0; i < n; i++)
-        {
-            System.out.print(arr[i] + " ");
-
-        }
-
+        int [] result = functionalDeleteOperation(arr,x);
+        System.out.println(Arrays.toString(result));
 
     }
 

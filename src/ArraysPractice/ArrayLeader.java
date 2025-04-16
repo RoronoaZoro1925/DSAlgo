@@ -1,5 +1,10 @@
 package ArraysPractice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class ArrayLeader
 {
     public static void main(String[] args)
@@ -7,6 +12,8 @@ public class ArrayLeader
         int arr[] = {1,3,10,5,7,8,2,6,4,5};
 //        arrayLeader(arr);
         leaderFromRightToLeft(arr);
+
+        AtomicInteger atomicInteger = new AtomicInteger();
 
     }
     static void arrayLeader(int arr[])
@@ -29,6 +36,18 @@ public class ArrayLeader
 
         }
     }
+
+//    public static int [] functionalArrayLeader(int arr [])
+//    {
+//        if (arr==null||arr.length==0)
+//            return new int[0];
+//
+//        List<Integer> result = Arrays.stream(arr)
+//                .boxed()
+//                .collect(ArrayList::new,(list,value)->{
+//
+//                })
+//    }
 
     static void leaderFromRightToLeft(int arr[])
     {

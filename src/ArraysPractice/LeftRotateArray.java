@@ -4,16 +4,16 @@ public class LeftRotateArray
 {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4};
-//        leftRotate(arr);
-//        for (int i:arr)
-//        {
-////            System.out.print(i + " ");
-//        }
-        rightRotate(arr);
-        for (int j:arr)
+        leftRotate(arr);
+        for (int i:arr)
         {
-            System.out.print(j + " ");
+            System.out.print(i + " ");
         }
+//        rightRotate(arr);
+//        for (int j:arr)
+//        {
+//            System.out.print(j + " ");
+//        }
 
     }
     public static void leftRotate(int arr[])

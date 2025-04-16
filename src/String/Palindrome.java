@@ -6,7 +6,7 @@ public class Palindrome
     {
         String s = "ABCDCBA";
 //        System.out.println(naivePal(s));
-        System.out.println(efficientPal(s));
+        System.out.println(efficientPal (s));
 
     }
 
