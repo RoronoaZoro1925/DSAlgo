@@ -1,4 +1,5 @@
-a=First Term
-b=Second term
-n=Number of repetition
-r=b/a
+Brute force approach-> two pointer approach where every element will traverse along the whole array
+[1,10,4,2],difference=3
+Now array.sort
+[1,2,4,10]
+Let's start from array.length-1 then traverse back

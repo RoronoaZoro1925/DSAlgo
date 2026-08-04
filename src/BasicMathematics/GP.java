@@ -8,7 +8,7 @@ public class GP {
         System.out.println(calculateGP(a,b,n));
     }
 
-    private static double calculateGP(int a, int b, int n) {
+    private static int calculateGP(int a, int b, int n) {
         // calculate nth term of GP starting with a and second term b
         double r = (double) b / a;
         double result = a;
@@ -16,7 +16,7 @@ public class GP {
         for (int i = 1; i < n; i++) {
             result *= r;
         }
-        return result;
+        return (int) result;
     }
 
 }
