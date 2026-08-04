@@ -1,0 +1,4 @@
+a=First Term
+b=Second term
+n=Number of repetition
+r=b/a
