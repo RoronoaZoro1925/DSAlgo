@@ -14,7 +14,7 @@ public class PrimeNumber
     static boolean isPrime(int i)
     {
         if (i==1)
-            return true;
+            return false;
         if (i==2 || i==3)
             return true;
         if (i%2==0 || i%3==0)

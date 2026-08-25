@@ -1,5 +1,5 @@
-Brute force approach-> two pointer approach where every element will traverse along the whole array
-[1,10,4,2],difference=3
-Now array.sort
-[1,2,4,10]
-Let's start from array.length-1 then traverse back
+Traverse all the elements of the arraya and divide it by 2,3,5. To check if any number is prime or not.
+We will keep the track of steps by keeping the count of it,  
+While checking the prime number if check fails then we will indicate which number was dividing the number.
+Once we have the number dividing the element then we will decide if it need increment or multiplication by 2.
+
