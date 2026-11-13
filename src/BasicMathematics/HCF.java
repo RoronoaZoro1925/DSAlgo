@@ -3,10 +3,10 @@ public class HCF
 {
     public static void main(String[] args)
     {
-        int N=75;
-        int M=50;
-//        System.out.println(GCD(M,N));
-        System.out.println(moreEffHCF(N,M));
+        int N=5;
+        int M=10;
+       System.out.println(GCD(M,N));
+        // System.out.println(moreEffHCF(N,M));
 
     }
     static int GCD(int M, int N)

@@ -5,7 +5,7 @@ public class CheckSubsequence
     public static void main(String[] args)
     {
         String s1 = "ABCD";
-        String s2 = "ADC";
+        String s2 = "AD";
         int m = s1.length();
         int n = s2.length();
          System.out.println(iterativeCheck(s1,s2));
@@ -38,5 +38,17 @@ public class CheckSubsequence
             return recursiveCheck(s1,s2,m-1,n-1);
         else
             return recursiveCheck(s1,s2,m-1,n);
+    }
+
+    public static int checkFirstOccurence(String s, String t){
+        int i = s.charAt(0);
+        int j = t.charAt(0);
+        while (i<s.length()) {
+            if (s.charAt(i)==t.charAt(j)) {
+                j++;
+            }
+            i++;
+        }
+        return i;
     }
 }

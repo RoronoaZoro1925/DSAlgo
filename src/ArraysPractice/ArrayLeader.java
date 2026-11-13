@@ -9,9 +9,12 @@ public class ArrayLeader
 {
     public static void main(String[] args)
     {
-        int arr[] = {1,3,10,5,7,8,2,6,4,5};
-//        arrayLeader(arr);
-        leaderFromRightToLeft(arr);
+        int arr[] = {61,61,17};
+       arrayLeader(arr);
+        // leaderFromRightToLeft(arr);
+        // for (int i : leaders(arr)) {
+        //     System.out.print(i + " ");
+        // }
 
         AtomicInteger atomicInteger = new AtomicInteger();
 
@@ -23,7 +26,7 @@ public class ArrayLeader
             boolean flag = false;
             for (int j = i+1; j <arr.length ; j++)
             {
-                if (arr[i]<=arr[j])
+                if (arr[i]<arr[j])
                 {
                     flag=true;
                     break;
@@ -62,5 +65,18 @@ public class ArrayLeader
             }
 
         }
+    }
+
+    static ArrayList<Integer> leaders(int arr[]){
+        ArrayList<Integer> maxArray = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (i==arr.length-1) {
+                maxArray.add(arr[i]);
+            }
+            else if (arr[i]>=arr[i+1]) {
+                maxArray.add(arr[i]);
+            }
+        }
+        return maxArray;
     }
 }

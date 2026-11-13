@@ -61,12 +61,12 @@ public class SecondLargestElement
             if (arr[i]>arr[largest])
             {
                 result=largest;
-                largest=i;
+                largest=arr[i];
             } else if (arr[i]!=arr[largest])
             {
                 if (result==-1||arr[i]>arr[result])
                 {
-                    result=i;
+                    result=arr[i];
                 }
 
             }

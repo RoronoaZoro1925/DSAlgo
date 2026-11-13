@@ -6,12 +6,13 @@ public class ReverseAString
 {
     public static void main(String[] args)
     {
-        String s = "Hello World";
+        String s = "HelloWorld";
         char[] str = s.toCharArray();
         int n = s.length();
 //        System.out.println(stackReverse(s));
         reverseWord(str,n);
         System.out.println(str);
+        System.out.println(reverseWholeString(s));
     }
 
     public static String stackReverse(String str)
@@ -55,5 +56,10 @@ public class ReverseAString
         }
         reverse(str,start,n-1);
         reverse(str,0,n-1);
+    }
+
+    public static String reverseWholeString(String s){
+        String reverse = new StringBuilder(s).reverse().toString();
+        return reverse;
     }
 }
